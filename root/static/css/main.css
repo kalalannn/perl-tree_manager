@@ -1,0 +1,23 @@
+form {
+    display: inline;
+}
+
+.border-1 {
+    border: 1px solid black !important;
+}
+
+.border-2 {
+    border-left: 2px dashed black !important;
+    border-right: 2px dashed black !important;
+}
+
+.border-3 {
+    border: 3px dotted black !important;
+}
+
+.message {
+    color: #390;
+}
+.error {
+    color: #f00;
+}

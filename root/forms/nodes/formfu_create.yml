@@ -1,0 +1,28 @@
+---
+action: /nodes/formfu_create
+indicator: submit
+attrs:
+  class: row no-gutters
+
+auto_container_class: 'col input-group m-1'
+
+default_args:
+  elements:
+    'Text':
+      attrs:
+        class: form-control
+
+elements:
+  - type: Text
+    name: parent_node_id
+    constraints:
+      - Integer
+      - Required
+    add_attrs:
+      placeholder: Parent ID
+
+  - type: Submit
+    name: submit
+    value: Submit
+    attrs:
+      class: btn btn-outline-primary

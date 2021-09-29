@@ -1,0 +1,16 @@
+    [% META title = 'Tree Manager' %]
+
+    <div class="col">
+        <h5> New Node </h5>
+        [% form %]
+
+        <span class="error">[% error_msg %]</span>
+        <span class="message">[% status_msg %]</span>
+
+        <hr>
+
+        <h5> Current Tree ([% sql_perl %]) </h5>
+        [% INCLUDE "nodes/tree.tt2" %] 
+
+    </div>
+

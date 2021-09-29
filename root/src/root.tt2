@@ -1,0 +1,4 @@
+    <div class="col">
+        <div> <h3> [% title -%] </h3> </div>
+        <div> [% content -%] </div>
+    </div>

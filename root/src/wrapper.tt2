@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" [%#
+    %]"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>[% template.title or "My Catalyst App!" %]</title>
+<link rel="stylesheet" href="[% c.uri_for('/static/css/main.css') %]" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-start">
+    <a class="navbar-brand" href="[% c.uri_for('/') %]">
+        <img src="[% c.uri_for('/static/images/btn_88x31_powered.png') %]" width="90" height="30" class="d-inline-block align-top" />
+        Home
+    </a>
+    <ul class="navbar-nav mr-2">
+        <li class="nav-item">
+            <a class="nav-link" href="[% c.uri_for('/nodes/tree/sql') %]">
+                Manager SQL
+            </a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-2">
+        <li class="nav-item">
+            <a class="nav-link" href="[% c.uri_for('/nodes/tree/perl') %]">
+                Manager PERL
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<h3 class="m-3" align="center"> [% template.title or site.title %] </h3>
+
+<div class="row no-gutters m-3 justify-content-center">
+    [% content %]
+</div>
+
+<hr>
+
+<footer class="d-flex footer justify-content-center">
+    <span class="text-muted">
+        Copyright &copy; 2021 Nikolaj Vorobiev
+        <a href="mailto: VorobievNikolaj07@gmail.com">VorobievNikolaj07@gmail.com </a>
+    </span>
+</footer>
+
+</div>
+</body>
+</html>
