@@ -7,12 +7,14 @@ MySQL > 10.2.1
 Perl
 
 ## Usage
+```
 $ mysql < db_mysql/db_init.sql
 $ mysql < db_mysql/db_insert_test_data.sql
 
 $ perl Makefile.PL
 
 $ ./script/treemanager_server.pl
+```
 
 manager_sql     is using WITH RECURSIVE
 
