@@ -4,8 +4,11 @@ See Tree_manager-OA_Task.pdf for task description
 ## Requirements
 MySQL > 10.2.1
 
-Perl
+Perl5
 
+Catalyst::Runtime '5.90128'
+
+See Makefile.PL for more info
 ## Usage
 ```
 $ mysql < db_mysql/db_init.sql
